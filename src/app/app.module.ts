@@ -3,18 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ShellComponent } from './shell/shell.component';
-import { ContentComponent } from './content/content.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BlogComponent } from './blog/blog.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     SidebarComponent,
     ShellComponent,
-    ContentComponent
+    DashboardComponent,
+    BlogComponent,
+    PortfolioComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
