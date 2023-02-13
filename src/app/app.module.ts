@@ -11,6 +11,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ChessComponent } from './pages/chess/chess.component';
+import { AuthenticationComponent } from './pages/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChessComponent } from './pages/chess/chess.component';
     PortfolioComponent,
     SettingsComponent,
     ContactComponent,
-    ChessComponent
+    ChessComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,

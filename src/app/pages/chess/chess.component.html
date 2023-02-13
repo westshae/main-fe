@@ -3,7 +3,7 @@
     <tbody>
       <tr *ngFor="let row of grid; let i = index">
         <td class="chessboard-cell" *ngFor="let square of row; let j = index">
-          <button [ngClass]="{'dark' : shouldSetDark(i,j)}" class="chessboard-button">{{getDisplayText(i, j)}}</button>
+          <button (click)="handleClick(i,j)" [ngClass]="{'dark' : shouldSetDark(i,j)}" class="chessboard-button">{{getDisplayText(i, j)}}</button>
         </td>
       </tr>
     </tbody>
