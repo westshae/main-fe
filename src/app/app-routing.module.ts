@@ -7,9 +7,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
 import { AuthGuard } from './services/auth.guard';
 
+// { path:'blog', canActivate:[AuthGuard], component:BlogComponent }, 
+
 const routes: Routes = [
   { path:'', component: DashboardComponent },
-  { path:'blog', canActivate:[AuthGuard], component:BlogComponent }, 
+  { path:'blog', component:BlogComponent }, 
   { path:'portfolio', component:PortfolioComponent },
   { path:'contact', component:ContactComponent},
   { path:'authentication', component:AuthenticationComponent}
