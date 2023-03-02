@@ -1,22 +1,14 @@
-<div class="page-container">
-  <div class="page-card">
-    <h2>This is the portfolio</h2>
-    <p>I don't know why you're still reading, the information is all in the header</p>
+<div class="page-container" >
+  <div *ngIf="repos.length == 0">
+    Loading
   </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
+  <div class="page-card" *ngFor="let repo of repos; let i = index" id="repo{{i}}">
+    <a target="_blank" href="{{repo.url}}"> 
+      <h2>{{repo.fullname}}</h2>
+    </a>
+    <p *ngIf="repo.description">{{repo.description}}</p>
+    <p>Last updated: {{repo.updatedAtFormatted}}</p>
+    <button *ngIf="repo.language" class="disabled-button">{{repo.language}}</button>
+    <button *ngIf="repo.archived == true" class="disabled-button">Archived</button>
   </div>
 </div>

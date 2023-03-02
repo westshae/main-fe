@@ -8,11 +8,8 @@ import { ShellComponent } from './components/shell/shell.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { SettingsComponent } from './pages/settings/settings.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ChessComponent } from './pages/chess/chess.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +18,12 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
     DashboardComponent,
     BlogComponent,
     PortfolioComponent,
-    SettingsComponent,
     ContactComponent,
-    ChessComponent,
     AuthenticationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
