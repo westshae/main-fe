@@ -7,8 +7,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ShellComponent } from './components/shell/shell.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
 import { BlogTextComponent } from './pages/blogtext/blogtext.component';
 @NgModule({
@@ -18,8 +16,6 @@ import { BlogTextComponent } from './pages/blogtext/blogtext.component';
     ShellComponent,
     DashboardComponent,
     BlogComponent,
-    PortfolioComponent,
-    ContactComponent,
     AuthenticationComponent,
     BlogTextComponent
   ],
