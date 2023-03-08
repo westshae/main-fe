@@ -10,6 +10,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
+import { BlogTextComponent } from './pages/blogtext/blogtext.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
     BlogComponent,
     PortfolioComponent,
     ContactComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    BlogTextComponent
   ],
   imports: [
     BrowserModule,

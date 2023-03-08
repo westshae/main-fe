@@ -1,0 +1,6 @@
+<div class="page-container">
+  <div *ngIf="textInfo && text" class="page-card">
+    <h2 *ngIf="textInfo.title">{{textInfo.title}}</h2>
+    <p *ngIf="text.text">{{text.text}}</p>
+  </div>
+</div>

@@ -5,16 +5,17 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
-import { AuthGuard } from './services/auth.guard';
+import { BlogTextComponent } from './pages/blogtext/blogtext.component';
 
-// { path:'blog', canActivate:[AuthGuard], component:BlogComponent }, 
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   { path:'', component: DashboardComponent },
-  { path:'blog', component:BlogComponent }, 
+  { path:'blog', canActivate:[AuthGuard], component:BlogComponent }, 
+  { path:'text/:id', canActivate:[AuthGuard], component: BlogTextComponent},
   { path:'portfolio', component:PortfolioComponent },
   { path:'contact', component:ContactComponent},
-  { path:'authentication', component:AuthenticationComponent}
+  { path:'authentication', component:AuthenticationComponent},
 ];
 
 @NgModule({

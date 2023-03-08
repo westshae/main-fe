@@ -1,22 +1,14 @@
-<div class="page-container">
-  <div class="page-card">
-    <h2>This is the blog</h2>
-    <p>I don't know why you're still reading, the information is all in the header</p>
+<div class="page-container" >
+  <div *ngIf="cards.length == 0">
+    Loading
   </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
-  </div>
-  <div class="page-card">
-    <h2>Heres an example card</h2>
-    <p>Here's some example text, about how this dude went to the FUCKING MOON BABY!</p>
+  <div class="page-card" *ngFor="let card of cards; let i = index" id="repo{{i}}">
+    <a href="text/{{card.id}}"> 
+      <h2>{{card.title}}</h2>
+    </a>
+    <p *ngIf="card.description">{{card.description}}</p>
+    <p>Last updated: {{card.date}}</p>
+
+    <button *ngIf="card.author" class="disabled-button">{{card.author}}</button>
   </div>
 </div>
