@@ -9,6 +9,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
 import { BlogTextComponent } from './pages/blogtext/blogtext.component';
+import { HiremeComponent } from './pages/hireme/hireme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { BlogTextComponent } from './pages/blogtext/blogtext.component';
     DashboardComponent,
     BlogComponent,
     AuthenticationComponent,
-    BlogTextComponent
+    BlogTextComponent,
+    HiremeComponent
   ],
   imports: [
     BrowserModule,
