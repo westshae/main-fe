@@ -7,10 +7,12 @@ import { BlogTextComponent } from './pages/blogtext/blogtext.component';
 import { HiremeComponent } from './pages/hireme/hireme.component';
 
 import { AuthGuard } from './services/auth.guard';
+import { BloguploadComponent } from './pages/blogupload/blogupload.component';
 
 const routes: Routes = [
   { path:'', component: DashboardComponent },
-  { path:'blog', canActivate:[AuthGuard], component:BlogComponent }, 
+  { path:'blog', canActivate:[AuthGuard], component:BlogComponent},
+  { path:'blogupload', canActivate:[AuthGuard], component:BloguploadComponent} ,
   { path:'text/:id', canActivate:[AuthGuard], component: BlogTextComponent},
   { path:'authentication', component:AuthenticationComponent},
   { path:'hireme', component:HiremeComponent}
